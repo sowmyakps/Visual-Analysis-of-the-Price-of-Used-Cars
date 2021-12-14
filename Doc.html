@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> Project Documentation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css"> 
+    	#link {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.6;
+}
+</style>
+</head>
+<body>
+	<h2 style="text-align: center;font-weight: bold;">Visual Analysis of the Price of Used Cars</h2>
+	<h4 style="text-align: right; padding-right: 20px"> <a href = "Main.html">Home</a> </h4>
+	<h4 style="text-align: right; padding-right: 20px"> <a href = "https://app.powerbi.com/
+	view?r=eyJrIjoiN2I0M2UzZjUtNzE4NS00Mjc1LWIzNmEtYThhZGY5MDEyMzQwIiwidCI6IjExMTNiZTM0LWFlZDEtNGQwMC1hYjRiLWNkZDAyNTEwYmU5MSIsImMiOjN9">Dashboard</a> </h4>
+	<h3 style="text-align: left;padding-left: 15px"> Team Members: Arun Varma Penmatsa, Palak Jain, Purna Sai Sowmya Karpurapu</h3>
+	<h3 style="text-align: left;padding-left: 15px"> Advisor: Dr. Khairi Rheda</h3>
+	<h3> &nbsp; Introduction: </h3>
+	<p> &nbsp; In recent times, we have observed a global increase in demand for used cars. Whether from the perspective of a buyer or seller, it is always a dilemma to price a used car appropriately. The major concern is if the price quoted is based on the worthiness of the vehicle or not. So, in this project, we will create an interactive visualizations using Microsoft PowerBI which show the price of used cars in accordance with several features.
+	</p>
+	<h3> &nbsp; Dataset: </h3>
+	<p> &nbsp; We are using an open-source data set of used cars from Kaggle which consists of 26 columns like manufacturer, model, condition, fuel, color, mileage for around 400000 used cars. Columns: Id, Url, Region, Region URL, Price, Year, Manufacturer, Model, Condition, Cylinders, Fuel,Odometer (Miles travelled by the Vehicle), Title Status, Transmission, VIN, Drive, Size, Type, Paint Color, Imageurl, Description, County, State, Latitude, Longitude, Posting Date.</p>
+	<p> &nbsp;  Number of Rows: 400000</p>
+	<p> &nbsp; Of all these available columns, we used the most important features that contribute most to the price of a car like Region, Price, Year, Manufacturer, Model, Condition, Odometer, Size, Vehicle Type, and State.</p>
+    <h3> &nbsp; Approach: </h3>
+    <h3> &nbsp; Exploratory Data Analysis: </h3>
+    <p> &nbsp First, we explored the dataset by performing exploratory data analysis in python and understood the distribution of the dataset by plotting few bar plots and pie charts.</p>
+    <p> &nbsp We even created a word cloud with manufacturer names to see the most popular brands.</p>
+    <h3> &nbsp; Dashboard Design: </h3>
+    <p> &nbsp Since the dataset is very rich, we brainstormed and listed out the use cases that our visualizations should be able to answer.</p>
+    <p> &nbsp We chose the colors that are clearly distinct. So that color blind people will be able to discern the graphs easily.</p>
+    <p> &nbsp Following that, we attempted to arrange the graphics in such a way that the most important visuals are visible at the top of the page.</p>
+    <p> &nbsp Post that, we have tried to enhance these visualizations by adding more than one attribute in the graph. So that each visual can answer the depth questions as well.</p>
+    <p> &nbsp Later, we added several filters. So that it is easy for the users to filter the results.</p>
+    <p> &nbsp So, for the filters which have more values, it is difficult to scroll and select the options. So, added the search option to ease selecting the values.</p>
+    <p> &nbsp To enhance the slicing even more, we changed the Price and Odometer filters as sliders.</p>
+    <h3> &nbsp; Brainstorming Visuals: </h3>
+    <img src="BrainStorm.png" width="800" height="350">
+	<h3> &nbsp; Tools: </h3>
+	<p> &nbsp; Microsoft PowerBI </p>
+	<p> &nbsp; Html </p>
+	<p> &nbsp; CSS </p>
+	<h3> &nbsp; Output: </h3>
+	<p> &nbsp; The developed visualizations, answered several questions related to used cars's price.</p>
+	<img src="DonutChart.png" width="500" height="350">
+	<p> &nbsp; From the above visual, we can easily observe how the cars are distributed based on their sizes from the doughnut graphic.</p>
+	<img src="PieChart.png" width="500" height="350">
+	<p> &nbsp; The pie chart above depicts the distribution of cars according to their condition.</p>
+	<img src="ClusteredColumn.png" width = "900" height = "400">
+	<p> &nbsp; The number of cars by brand and their average price are shown in the clustered column chart above. </p>
+	<p> &nbsp; When the chart is drilled down, it reveals the car model in addition to the brand, as shown below.</p>
+	<img src="DrillDown1.png" width = "900" height = "400">
+	<img src="RegionMap.png" width = "600" height = "400">
+	<p> &nbsp; The circles in the above geographic graph represent the number of cars available in each region. The wider the circle, the more automobiles are available in that area.</p>
+	<img src="StackedColumn.png" width = "900" height = "400">
+	<p> &nbsp; The above stacked column chart shows the average price of the car by State and the size. In this visual, the legend is size.</p>
+	<p> &nbsp; When this graph is drilled down, it looks like below and in addition to state and size split, it also shows the brand split.</p>
+	<img src="DrillDown2.png" width = "900" height = "400">
+	<img src="BarLine.png" width = "900" height = "400">
+	<p> &nbsp; The above bar and line chart shows the number of cars manufactured and the average price of the car in a particular year.</p>
+	<p> &nbsp; The bars depict the number of cars, and the line shows the average price of the car.</p>
+	<h3> &nbsp; References: </h3>
+	<p> &nbsp; https://www.kaggle.com/austinreese/craigslist-carstrucks-data </p>
+	<p> &nbsp; https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-doughnut-charts</p>
+	<p> &nbsp; https://docs.microsoft.com/en-us/power-bi/create-reports/service-report-create-new</p>
+	<p> &nbsp; https://amueller.github.io/word_cloud/auto_examples/masked.html</p>
+	<h3> &nbsp; Contribution of each Member: </h3>
+	<p> &nbsp;  Arun contributed to project proposal vision and editing, use case analysis, Embedding PowerBI report with Html, Design document.</p>
+	<p> &nbsp;  Palak contributed to Data cleaning and preprocessing, Exploratory Data Analysis, Landing UI page Html and CSS of interface.</p>
+	<p> &nbsp;  Sowmya contributed to project proposal initial draft, PowerBI report visualization, Design document, Video.</p>
+	<p> &nbsp </p>
+	<p> &nbsp </p>
+	<p> &nbsp </p>
+
+</body>
+</html>
